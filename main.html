@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hyeju Achive</title>
+        <link rel="stylesheet" href="mstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=UoqMunThenKhung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    </head>
+    <body>
+        <div class="cursorItem">
+            <span class="cursor"></span>
+        </div>
+        <div class="main">
+            <header class="contain_menu">
+                <div class = "logo">
+                    <span>HJ:ARCHIVE</span>
+                </div>
+                <div class = "under">
+                    <ul class="menu">
+                        <li><a href="write.html">Write</a></li>
+                        <li><a href="list.html">List</a></li>
+                        <li>
+                            <button type="button" id="soundButton" class="soundBtn">Sound</button>
+                            <audio id="bgm" loop preload="none">
+                                <source src="./audio/Clair-de-lune.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="data">
+                <div class = "hello">
+                    <h2>HYEJU ARCHIVE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="ment">
+            <div class="text" id="scrollText">
+                <p>불안, 믿음, 소망</p>
+            </div>
+            <div class="imageBox">
+                <img src="./image/rise.jpg" class="scroll-image" id="scrollImage" alt="rise">
+                <p>당장은 성과가 없어도 언젠가는 해낼 거라 믿습니다.</p>
+                <p>한걸음, 한걸음 나아가다 보면</p>
+                <p>뒤돌아 봤을 때 제가 있던 자리가 도로의 야경처럼</p>
+                <p>빛나고 있을 거라 생각합니다.</p>
+            </div>
+        </div>
+        <section id="inc01">
+            <h2 class="myName">Kim Hye Ju</h2>
+            <div class="big_txt">
+                <p class="b_txt">When I first got a taste of coding, I realized that I could create a website with my own hands. <br/> That realization led me to study Computer Engineering.</p>
+                <p class="b_txt">One day, I came across a website that used interaction. As scenes changed with scrolling and the screen responded <br/> to the user’s movement, my body reacted before I could even think. 'Ah, a website can be this sensory.'</p>
+                <p class="b_txt">Since then, I have continued learning and challenging myself with the hope of creating screens <br/> that offer new experiences while helping users navigate without feeling lost.</p>
+                
+                <p class="h_txt">처음 코딩을 맛본 저는 내 손으로 웹 사이트를 만들 수 있다는 걸 깨닫고 컴퓨터공학과에 진학하게 됩니다.</p>
+                <p class="h_txt">어느날, 인터랙션을 활용한 웹사이트를 보게 됩니다. 스크롤을 따라 장면이 바뀌고 화면이 사용자의 움직임에</p>
+                <p class="h_txt">반응하는걸 보자 몸이 먼저 반응했습니다. '아, 웹사이트도 이렇게 감각적일 수가 있구나.'</p>
+                <p class="h_txt">새로운 경험을 주면서 사용자가 길을 잃지 않는 화면을 만들고 싶다는 생각에 계속 배우며 도전하고 있습니다.</p>
+            </div>
+        </section>
+        <section class="image-section-wrapper" id="trigger">
+            <div class="mical">저를 공유합니다.</div>
+            <p class="mical2">작업물과 취미 활동, 그리고 추억</p>
+            <div class="background-text"> F1도 봅니다!</div>
+            <div class="image-section" id="imageContainer">
+                <img src="./image/mood01.jpg" alt="스크롤 이미지" class="active" >
+                <img src="./image/mood03.jpg" alt="스크롤 이미지" >
+                <img src="./image/baking.jpg" alt="스크롤 이미지" >
+                <img src="./image/mood02.jpg" alt="스크롤 이미지" >
+                <img src="./image/young.jpg" alt="스크롤 이미지" >
+            </div>
+        </section>
+        <section class="writeF">
+            <h2>Archive Note</h2>
+            <p>저를 둘러본 후 남기는 짧은 후기란입니다.</p>
+            <form id="writeForm">
+                <div><input type="text" name="subject" placeholder="제목"/></div>
+                <div><input type="text" name="writer" placeholder="작성자"/></div>
+                <div><textarea name="content"  placeholder="내용"></textarea></div>
+                <input class="writeBtn" type="submit" value="글작성"/>
+            </form>
+        </section>
+        <script src="mstyle.js"></script>
+        <p class="music-credit">
+            Music: Clair de lune · CC BY 3.0
+        </p>
+    </body>
+</html>

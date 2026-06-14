@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="write.css">
+        <title>게시판</title>
+    </head>
+    <body>
+        <div class="cursorItem">
+            <span class="cursor"></span>
+        </div>
+        <div class="main">
+            <header class="contain_menu">
+                <div class = "logo">
+                    <span>RIIZE</span>
+                </div>
+                <div class = "under">
+                    <ul class="menu">
+                        <li><a href="/main.html">Home</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="data">
+                <div class = "hello">
+                    <h2>Team Anton</h2>
+                </div>
+            </div>
+        </div>
+
+            <section class="writeF">
+                <h2>게시판 리스트</h2>
+
+                <form id="modifyForm">
+                    <div><input type="text" name="subject" placeholder="제목"/></div>
+                    <div><input type="text" name="writer" placeholder="작성자"/></div>
+                    <div><textarea name="content"  placeholder="내용"></textarea></div>
+                    <input type="submit" value="수정완료" class="inputBtn"/>
+                </form>
+                <button id="back" style="margin-top: 10px">뒤로가기</button>
+            </section>
+            
+            
+            <script src="./modify.js"/>
+    </body>
+</html>
