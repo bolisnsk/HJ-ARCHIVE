@@ -3,7 +3,7 @@
 검색, 조회수, 수정/삭제 기능을 Vanilla JS로 구현했습니다
 
 ##  Link
-👉[ https://your-vercel-link.vercel.app](https://hj-archive-coral.vercel.app/main.html)
+👉[ https:///hj-archive-coral.vercel.app/main.html](https://hj-archive-coral.vercel.app/main.html)
 
 ##  🧩 프로젝트 소개
 
